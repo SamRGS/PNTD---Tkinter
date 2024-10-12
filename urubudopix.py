@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 import tkinter as tk
 
 
-def cadastro_enviado(): 
+def pagamento(): 
     messagebox.showinfo("Informação", "Em até 24h você receberá o dinheiro na sua conta!") 
        
 #Janela
@@ -34,7 +34,7 @@ imagem = Image.open("enviar.png")
 imagem_resized = imagem.resize((60,40))
 imagem_botao = ImageTk.PhotoImage(imagem_resized)
 
-btn = Button(urubudopix, image = imagem_botao, command = cadastro_enviado)
+btn = Button(urubudopix, image = imagem_botao, command = pagamento)
 btn.pack(pady = 20)
 
 urubudopix.mainloop()
